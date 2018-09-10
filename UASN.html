@@ -1,0 +1,490 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>Localization and Time Synchroniz</title>
+<script language="JavaScript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+</head>
+
+<body onLoad="FP_preloadImgs(/*url*/'../Documents/My%20Web%20Sites/images/button5.jpg', /*url*/'../Documents/My%20Web%20Sites/images/button4.jpg')">
+
+<h2 align="center"><font face="宋体">Localization and Time Synchronization 
+Techniques in Underwater Acoustic Sensor Networks (UASNs)</font></h2>
+<div id="breadcrumbs" style="margin: 5px 0px 0px; padding: 0px; text-align: left; font-size: 0.85em; color: rgb(51, 51, 51); float: left; font-family: arial, helvetica, sans-serif; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="breadcrumbs" style="margin: 0px; padding: 0px;">
+		<span class="showHere" style="margin: 0px; padding: 0px; color: rgb(51, 51, 51);">
+		You are here:<span class="Apple-converted-space">&nbsp;</span></span><span style="margin: 0px; padding: 0px; color: rgb(51, 51, 51);">Home</span></div>
+</div>
+<div id="fontsize" style="margin: 0px; padding: 0px; text-align: right; float: none; display: inline; color: rgb(51, 51, 51); font-family: arial, helvetica, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<br class="Apple-interchange-newline">
+	　</div>
+<div class="left1 " id="nav">
+	<div class="moduletable_menu">
+		<table border="0" width="100%">
+			<tr>
+				<td valign="top">
+				<div class="moduletable_menu">
+					<h3 style="margin-top: 0; margin-bottom: 0"><span class="backh"><span class="backh2">
+					<span class="backh3">&nbsp;&nbsp; Main Menu</span></span></span></h3>
+					<ul class="menu">
+						<li class="item-101 current active">
+						<p style="margin-top: 0; margin-bottom: 0">
+						<a href="#Overview papers and tutorials">Overview Papers 
+						and Tutorials</a></li>
+						<li class="item-106">
+						<p style="margin-top: 0; margin-bottom: 0"><a href="#UASN simulators">UASN 
+						Simulators</a></li>
+						<li class="item-102">
+						<p style="margin-top: 0; margin-bottom: 0">
+						<a href="#Acoustic channel estimation">Acoustic Channel 
+						Estimation</a></li>
+						<li class="item-103 parent">
+						<p style="margin-top: 0; margin-bottom: 0">
+						<a href="#Localization algorithms">Localization 
+						Algorithms</a></li>
+						<li class="item-103 parent">
+						<p style="margin-top: 0; margin-bottom: 0">
+						<a href="#Time Synchronization">Time Synchronization</a></li>
+						<li class="item-111 parent">
+						<p style="margin-top: 0; margin-bottom: 0"><a href="#Hardware Details">
+						Hardware Details</a></li>
+						<li class="item-111 parent">
+						<p style="margin-top: 0; margin-bottom: 0">
+						<a href="#Existing products">Existing Products</a></li>
+						<li class="item-111 parent">
+						<p style="margin-top: 0; margin-bottom: 0">
+						<a href="#Other related applications">Other Related 
+						Applications</a></li>
+						<li class="item-111 parent">
+						<p style="margin-top: 0; margin-bottom: 0">
+						<a href="#Research groups worldwide">Research groups 
+						worldwide</a></li>
+						<li class="item-105">
+						<p style="margin-top: 0; margin-bottom: 0"><a href="#中文文献：">中文文献</a></li>
+					</ul>
+				</div>
+				<div class="moduletable">
+					<h3 style="margin-top: 0; margin-bottom: 0"><span class="backh"><span class="backh2">
+					<span class="backh3">&nbsp;&nbsp; External Links</span></span></span></h3>
+					<ul class="menu">
+						<li class="item-147">
+						<p style="margin-top: 0; margin-bottom: 0"><font face="宋体">
+						<a href="http://cfcc.edu/martech/">Marine Technology</a></font></li>
+						<li class="item-147">
+						<p style="margin-top: 0; margin-bottom: 0"><font face="宋体">
+						<a href="http://www.benthos.com/">Teledyne Benthos</a></font></li>
+					</ul>
+				</div>
+				</td>
+				<td width="1167" valign="top">
+				<p style="margin-top: 0">　</p>
+				<p style="margin-top: 1px"><font face="宋体">Underwater acoustic sensor 
+				networks (UASNs) enable numerous applications for ocean 
+				monitoring and surveillance, assisted navigation, oceanographic 
+				data harvesting, pollution detection and disaster rescue, etc.. 
+				Each sensor needs its location information to associate with its 
+				sensing data to make good use of the data. Thus, acoustic 
+				signals are employed in UASNs for underwater localization, which 
+				are fundamentally different from the terrestrial one, and 
+				extremely difficult due to the non-uniform underwater medium. 
+				Great challenges are imposed on underwater localization for 
+				UASNs, such as the varying speed of the acoustic signal, the 
+				long propagation delay, the harsh underwater environments, and 
+				the mobility of the sensors. </font>
+				</p>
+				<p><font face="宋体">On this page, we provide a list of papers in 
+				the related areas of underwater acoustic localization. The 
+				intention is to list some key papers in this area for academic 
+				exchanges and also serve for those who are going to study this 
+				field.</font></p>
+				<p><font face="宋体">This page is maintained by Youjie Xia (Ph.D 
+				Candidate) and
+				<a href="http://iwin.sjtu.edu.cn/yiyinwang/index.html">Yiyin Wang</a> (Assistant Professor) from Department of Automation, Shanghai Jiao Tong 
+				University, Shanghai, P. R. China. If you want your paper to be 
+				listed here, please write to
+				<a href="mailto:autoxiayj@gmail.com">Youjie Xia</a>. </font></p>
+				<p>　</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+
+
+
+<h3><font face="宋体" size="5"><a name="Overview papers and tutorials"></a>Overview Papers and Tutorials</font></h3>
+<ol>
+<li>
+<font face="宋体">L. Paull, S. Saeedi, M. Seto, H. Li,
+<a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6678293">AUV 
+Navigation and Localization: A Review</a>, </font><i>IEEE J. OCEANIC ENGINEERING</i>, 
+vol. 39, no. 1,
+<font face="宋体">pp. 131-149, </font>Jan. 2014.</li>
+<li>
+<font face="宋体">M. Erol-Kantarci，H. T. Mouftah, and S. Oktug,
+<a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5714973">A survey 
+of architectures and localization techniques for underwater acoustic sensor 
+networks</a>, <i>IEEE Communications Surveys &amp; Tutorials</i>, vol. 13, no. 3, pp. 
+487-502, Mar. 2011.</font></li>
+<li>
+<font face="宋体">M. Erol-Kantarci, H. T. Mouftah, and S. Oktug,
+<a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5673086">
+Localization techniques for underwater acoustic sensor networks</a>, <i>IEEE Commun. 
+Mag.</i>, vol. 48, no.12, pp. 152-158, 2010.</font></li>
+<li>
+<font face="宋体">M. Stojanovic, J. Preisig,
+<a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4752682">
+Underwater acoustic communication channels: Propagation models and statistical 
+characterization</a>, <i>IEEE Commun. Mag.</i>, vol. 47, no.1, pp. 84-89, </font>Jan.<font face="宋体"> 
+2009.</font></li>
+<li>
+<font face="宋体">V. Chandrasekhar, W. K. Seah, Y. S. Choo, and H. V. Ee,
+<a href="http://dl.acm.org/citation.cfm?id=1161047">Localization in underwater 
+sensor networks: survey and challenges</a>, in <i>Proc. first workshop on 
+Underwater networks (WuWNet)</i>, Los Angeles, CA, USA, pp. 33-40, 2006.</font></li>
+</ol>
+
+
+
+<h3><font face="宋体" size="5"><a name="UASN simulators"></a>UASN Simulators</font></h3>
+
+<ol>
+<li>
+<font face="宋体">Here is a website about the Underwater Acoustic Channel Model 
+Simulator, please refer to <a href="http://oalib.hlsresearch.com/Rays/">
+http://oalib.hlsresearch.com/Rays/</a>.</font></li>
+<li>
+UWSN Simulator: Aqua-Sim, <font face="宋体">please refer to </font>
+<a href="http://obinet.engr.uconn.edu/wiki/index.php/Aqua-Sim">
+http://obinet.engr.uconn.edu/wiki/index.php/Aqua-Sim</a>.</li>
+</ol>
+
+
+
+<h3><font face="宋体" size="5"><a name="Acoustic channel estimation"></a>Acoustic Channel Estimation</font></h3>
+
+<ol>
+<li><font face="宋体">F. Qu, X. Nie, W. Xu,
+<a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6781554">A 
+Two-Stage Approach for the Estimation of Doubly Spread Acoustic Channels</a>,
+</font><i>IEEE J. OCEANIC ENGINEERING</i>, 2014. (Accepted for publication)</li>
+<li><font face="宋体">S. Kaddouri, P. P. J. Beaujean, P. J. Bouvet, G. Real,
+<a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6657753">Least 
+Square and Trended Doppler Estimation in Fading Channel for High-Frequency 
+Underwater Acoustic Communications</a>, </font><i>IEEE J. OCEANIC ENGINEERING</i>, 
+vol. 39, no. 1, <font face="宋体">pp. 179-188, </font>Jan. 2014.</li>
+</ol>
+
+
+
+<h3><font face="宋体" size="5"><a name="Localization algorithms"></a>Localization Algorithms</font></h3>
+
+<ol>
+<li>
+<font face="宋体">Y. T. Tan, R. Gao, M. Chitre,
+<a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6727582">
+Cooperative Path Planning for Range-Only Localization Using a Single Moving 
+Beacon</a>,</font><i>IEEE J. OCEANIC ENGINEERING</i>, 2014. (Accepted for 
+publication)</li>
+<li>
+<font face="宋体">Z. Yu, C. Xiao, G. Zhou,
+<a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6651756">
+Multi-Objectivization-Based Localization of Underwater Sensors Using 
+Magnetometers</a>, <i>IEEE SENSORS JOURNAL</i>, vol. 14, no. 4, pp. 1099-1106, 
+Apr. 2014.</font></li>
+<li>
+R. Diamant,<span style="color: rgb(0, 153, 51); font-family: Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 16px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;"><span class="Apple-converted-space">&nbsp;</span></span>L. 
+Lampe<font face="宋体">,
+<a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6189351">
+Underwater localization with time-synchronization and propagation speed 
+uncertainties</a>，</font><i>IEEE Trans. Mobile Computing</i>, vol. 12, no. 7, pp. 1257-1269, 
+Jul. 2013.</li>
+<li>
+<font face="宋体">A. K. Othman,
+<a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4542532">GPS-less 
+localization protocol for underwater acoustic networks</a>, in <i>Proc. IEEE WOCN</i>, Surabaya, 
+pp. 1-6, May. 2008.</font></li>
+<li>
+<font face="宋体">A. K. Othman, A. E. Adams, C. C. Tsimenidis,
+<a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=1602225">Node 
+discovery protocol and localization for distributed underwater acoustic 
+networks</a>, in <i>Proc. IEEE AICT-ICIW</i>, pp. 93-93, Feb. 2006. </font></li>
+<li><font face="宋体">T. He, C. Huang, B. M. Blum, J. A. Stankovic, and T. 
+Abdelzaher, <a href="http://dl.acm.org/citation.cfm?id=938995">Range-free 
+localization schemes for large scale sensor networks</a>, in <i>Proc. IEEE MobiCom</i>, San Diego, CA, USA, pp. 81-95. 2003.</font></li>
+<li><font face="宋体">A. Savvides, H. Park, and M. B. Srivastava,
+<a href="http://dl.acm.org/citation.cfm?id=942356">The n-hop multilateration 
+primitive for node localization problems,</a> <i>Mobile Networks and 
+Applications</i>, Vol. 8,&nbsp;no. 4,&nbsp;pp. 443-451, Aug. 2003.</font></li>
+<li><font face="宋体">A. Savvides, H. Park, and M. B. Srivastava,
+<a href="http://dl.acm.org/citation.cfm?id=570755">The bits and flops of the 
+n-hop multilateration primitive for node localization problems</a>, in <i>Proc. the 
+1st ACM Int. workshop on Wireless sensor networks applications</i>, Atlanta, 
+Georgia, USA, pp. 112-121, Sep. 2002.</font></li>
+<li><font face="宋体">A. Savvides, C. C. Han, and M. B. Strivastava,
+<a href="http://dl.acm.org/citation.cfm?id=381693">Dynamic fine-grained 
+localization in ad-hoc networks of sensors</a>, in <i>Proc. IEEE MobiCom</i>,
+Rome, Italy, pp. 166-179, Jul. 2001.</font></li>
+
+</ol>
+
+
+
+<h3><font face="宋体">&nbsp;<a name="1.Cluster based approach"></a>1.Cluster Based Approach &nbsp;&nbsp;&nbsp;
+</font>&nbsp;</h3>
+
+<ol>
+<li>
+<font face="宋体">H. Chan, A. Perrig,
+<a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/Web/People/haowen/ewsn04_Chan_ACE.pdf">
+ACE An emergent algorithm for highly uniform cluster formation</a>, </font>in Proc.<font face="宋体">
+<i>First European Workshop EWSN, Berlin, Germany</i>, vol. 2920,</font> pp. 
+154-171,<font face="宋体"> January 2004.</font></li>
+<li>
+<font face="宋体">R. Iyengar, B. Sik</font>dar<font face="宋体">,
+<a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1204195">
+Scalable and distributed GPS free positioning for sensor networks</a>, </font>in Proc. <i>IEEE IC</i><font face="宋体"><i>C</i>, 
+vol.1, pp. 
+338-342, May. 2003.</font></li>
+<li>
+<font face="宋体">S. Capkun, M. Hamdi and J. P. Hubaux,
+<a href="http://download.springer.com/static/pdf/645/art%253A10.1023%252FA%253A1013933626682.pdf?auth66=1397126757_9f63d90c637bbf8d985113949cc79b3d&ext=.pdf">
+GPS-free positioning in mobile ad-hoc networks</a>, </font>in Proc.<font face="宋体">
+<i>Hawaii International Conference on System Sciences</i>, pp. 3481-3490, Maui, 
+HW, January 2001.</font></li>
+<li>
+<font face="宋体">于宁.
+无线传感器网络定位优化方法 Chapter 5.5[D].北京邮电大学,2008.</font></li>
+<li>
+<font face="宋体">李旻.
+无线传感器网络基于分簇的可扩展相对定位算法研究 Chapter 3[D].中国科学技术大学,2008.</font></li>
+</ol>
+
+
+
+<h3><font face="宋体">&nbsp;<a name="2.Multidimensional scaling (MDS) method"></a>2.Multidimensional Scaling (MDS) Method</font></h3>
+
+<ol>
+<li>
+<font face="宋体">J. A. Costa, N. Patwari, A. O. Hero III,
+<a href="http://www.convexoptimization.com/TOOLS/Costa.pdf">Distributed 
+weighted-multidimensional scaling for node localization in sensor networks</a>,
+</font><i>ACM Trans.</i><font face="宋体"><i> Sensor Networks</i>, </font>vol.2, 
+no.1, pp.39-64, Feb. 2006.</li>
+<li>
+<font face="宋体">Y. Shang, W. Ruml, Y. Zhang, et al,<a href="http://dl.acm.org/citation.cfm?id=778439"> 
+Localization from mere connectivity</a>, in <i>Proc. 4th ACM 
+international symposium on Mobile ad hoc networking &amp; computing, Annapolis</i>, 
+Maryland, USA, pp. 201-212, Jun. 2003.</font></li>
+</ol>
+
+
+
+<h3><font face="宋体" size="5"><a name="Time Synchronization"></a>Time 
+Synchronization</font></h3>
+<ol>
+	<li>S. Kim, and Y. Yoo, SMP-Sync: Time Synchronization using Seawater 
+	Movement Pattern for Underwater Wireless Networks, Computing, in <i>
+	Proc. IEEE ICNC 2014</i>, pp.842-846, 2014.</li>
+	<li>J. Liu, Z. Wang, M. Zuba, Z. Peng, J. H. Cui and S. Zhou, DA-Sync: A 
+	Doppler-Assisted Time-Synchronization Scheme for Mobile Underwater Sensor 
+	Networks, <i>IEEE TRANSACTIONS ON MOBILE COMPUTING</i>, vol. 13, no. 3, Mar. 
+	2014.<font face="宋体"><b>
+	</b></font></li>
+	<li>J. Liu, Z. Zhou, Z. Peng, J. H. Cui, M. Zuba, and L. Fiondella, Mobi-Sync: 
+	Efficient Time Synchronization for Mobile Underwater Sensor Networks, <i>
+	IEEE TRANSACTIONS ON PARALLEL AND DISTRIBUTED SYSTEMS</i>, vol. 24, no. 2, 
+	Feb. 2013.</li>
+	<li>R. Diamant, L. Lampe, Underwater Localization with Time-Synchronization 
+	and Propagation Speed Uncertainties,<i> IEEE TRANSACTIONS ON MOBILE 
+	COMPUTING</i>, vol. 12, no. 7, Jul. 2013.</li>
+	<li>J. Liu, Z. Wang, M. Zuba, Z. Peng, J. H. Cui, and S. Zhou, JSL: Joint 
+	Time Synchronization and Localization Design with Stratification 
+	Compensation in Mobile Underwater Sensor Networks, in <i>Proc. 9th Annual 
+	IEEE Communications Society Conference on Sensor, Mesh and Ad Hoc 
+	Communications and Networks</i>, 2012.<font face="宋体"><b>
+	</b></font></li>
+	<li>&nbsp;A. Gkikopouli, G. Nikolakopoulos ,and S. Manesis, A Survey on 
+	Underwater Wireless Sensor Networks and Applications, <i>Mediterranean 
+	Conference on Control &amp; Automation</i>, Barcelona, Spain, Jul. 2012.</li>
+	<li>J. Liu, Z. Wang, Z. Peng, M. Zuba, J. H. Cui, and S. Zhou, TSMU: A Time 
+	Synchronization Scheme for Mobile Underwater Sensor Networks , in <i>Proc. 
+	IEEE Globecom</i>, 2011.</li>
+	<li>F. Yuan, S. Chen, X. Lin, and E. Cheng, Time-Frequency Synchronization 
+	Method for Multi-Point Underwater Acoustic Communication System ,in <i>Proc. 
+	29th Chinese Control Conference</i>, Beijing, China, Jul. 2010.</li>
+	<li>C. Tian, H. Jiang, X. Liu, X. Wan, W. Liu, and Y. Wang, Tri-Message: A 
+	Lightweight Time Synchronization&nbsp;Protocol for High Latency 
+	and&nbsp;Resource-Constrained Networks, in <i>Proc. IEEE ICC</i>, 2009.</li>
+	<li>A. A. Syed, and J. Heidemann, Time Synchronization for High Latency 
+	AcousticNetworks, in <i>Proc. INFOCOM</i>, 2006.</li>
+</ol>
+
+
+
+<h3><font face="宋体" size="5"><a name="Hardware Details"></a>Hardware Details</font><a href="#Top"><img border="0" id="img42" src="../Documents/My%20Web%20Sites/images/button6.jpg" height="20" width="50" alt="Top" onMouseOver="FP_swapImg(1,0,/*id*/'img42',/*url*/'../Documents/My%20Web%20Sites/images/button4.jpg')" onMouseOut="FP_swapImg(0,0,/*id*/'img42',/*url*/'../Documents/My%20Web%20Sites/images/button6.jpg')" onMouseDown="FP_swapImg(1,0,/*id*/'img42',/*url*/'../Documents/My%20Web%20Sites/images/button5.jpg')" onMouseUp="FP_swapImg(0,0,/*id*/'img42',/*url*/'../Documents/My%20Web%20Sites/images/button4.jpg')" fp-style="fp-btn: Simple Arrow 2; fp-font: SimSun-ExtB; fp-proportional: 0; fp-orig: 0" fp-title="Top"></a></h3>
+<ol>
+	<li>R. Been, D. T. Hughes, A. Vermeij,
+	<a href="http://natorto.cbw.pl/uploads/2008/6/NURC-PR-2008-001.pdf">
+	Heterogeneous underwater networks for ASW：technology and techniques</a>, <i>
+	NURC UDT Europe, Undersea Defence Technology Europe</i>, Glasgow, United 
+	Kingdom, 10-12 June. 2008.</li>
+	<li>C. Detweiller, I. Vasilescu, D. Rus,
+	<a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4302445">An 
+	underwater sensor network with dual communications, sensing, and mobility</a>,
+<font face="宋体">in <i>Proc. </i></font><i>IEEE </i>OCEANS 2007 - Europe, 
+	Aberdeen, pp. 1-6, June. 2007.</li>
+	<li>J. Wills, W. Ye, J. Heidemann,
+	<a href="http://delivery.acm.org/10.1145/1170000/1161055/p79-wills.pdf?ip=202.120.37.138&id=1161055&acc=ACTIVE SERVICE&key=BF85BBA5741FDC6E.17676C47DFB149BF.4D4702B0C3E38B35.4D4702B0C3E38B35&CFID=324422065&CFTOKEN=17818642&__acm__=1398654897_110b1bf37372546">
+	Low-power acoustic modem for dense underwater sensor networks</a>, in <i>
+	Proc. WUWNet'06</i>, New York, USA&nbsp;&nbsp; pp. 79-85, Sep. 2006<font face="宋体">.</font></li>
+</ol>
+
+
+
+<h3><font face="宋体" size="5"><a name="Research groups worldwide"></a>Research Groups Worldwide</font></h3>
+
+<ol>
+<li>
+<font face="宋体">UWSN Lab at the University of Connecticut (led by Prof.
+<a href="http://scholar.google.com/citations?user=QJbvuZEAAAAJ&hl=zh-CN">
+Jun-Hong Cui</a> and Prof.
+<a href="http://scholar.google.com/citations?user=02qN_-YAAAAJ&hl=zh-CN">Shengli 
+Zhou</a>), please refer to </font><a href="http://uwsn.engr.uconn.edu/">
+http://uwsn.engr.uconn.edu/</a>.</li>
+<li>
+<font face="宋体">BWN Lab Research page on&nbsp;Underwater Acoustic Sensor Networks 
+(led by Dr. <a href="http://scholar.google.com/citations?user=rAGwv14AAAAJ">Ian 
+F. Akyildiz</a>, etc.), please refer to </font>
+<a href="http://www.ece.gatech.edu/research/labs/bwn/UWASN/personnel.html">
+http://www.ece.gatech.edu/research/labs/bwn/UWASN/personnel.html</a>.</li>
+<li>
+<font face="宋体">AUV Lab at MIT Sea Grant, where
+<a href="http://scholar.google.com/citations?sortby=pubdate&hl=zh-CN&user=37lzFAoAAAAJ&view_op=list_works">
+Milica Stojanovic</a> is affiliated with, please refer to </font>
+<a href="http://auvlab.mit.edu/">http://auvlab.mit.edu/</a>.</li>
+</ol>
+
+
+
+<h3><font face="宋体" size="5"><a name="Existing products"></a>Existing Products</font></h3>
+<ol>
+<li>
+<font face="宋体">Here is a website about various products for UASN, please refer 
+to </font><a href="http://www.benthos.com/">http://www.benthos.com/</a>.</li>
+<li>
+<font face="宋体">
+<a href="http://www.oceaneco.cn/?c=product&m=view&catid=33&bgid=17">水声通信系列产品</a>：AquaNetwork水下通信系统。<br>
+<a href="http://www.oceaneco.cn/?c=product&m=view&catid=33&bgid=17">Series of 
+products in underwater acoustic communication</a>：AquaNetwork underwater 
+acoustic communication system.</font></li>
+<li>
+<font face="宋体">
+<a href="http://www.oceaneco.cn/?c=product&m=viewinfo&catid=65&id=46&bgid=17&bid=65">
+TrackLink 1500—USBL跟踪与高速水声通信系统的集成</a>，包括其应用。<br>
+<a href="http://www.oceaneco.cn/?c=product&m=viewinfo&catid=65&id=46&bgid=17&bid=65">
+TrackLink 1500—USBL Integration of tracking and high-speed </a>
+<a href="http://www.oceaneco.cn/?c=product&m=view&catid=33&bgid=17">underwater 
+acoustic communication</a><a href="http://www.oceaneco.cn/?c=product&m=viewinfo&catid=65&id=46&bgid=17&bid=65"> 
+system</a>，including its application.</font></li>
+<li>
+<font face="宋体">
+<a href="http://www.oceaneco.cn/?c=product&m=view&catid=25&bgid=16">AUV系列产品</a>，装备有声学调制解调器，即具有水声modem系统。<br>
+<a href="http://www.oceaneco.cn/?c=product&m=view&catid=25&bgid=16">Series of 
+AUVs</a>，Equipped with acoustic modems，i.e.with the underwater acoustic modem 
+system.</font></li>
+<li>
+<font face="宋体">
+<a href="http://china.makepolo.com/product-detail/100317502697.html">DSPComm Aquacomm水声通信产品</a>,
+产品的实际数据可供参考(如AUV的通信范围等)。<br>
+<a href="http://china.makepolo.com/product-detail/100317502697.html">DSPComm Aquacomm:Products of underwater acoustic 
+communication</a>,
+the actual data of products are available for reference (For example: AUV 
+communication range, etc.).</font></li>
+</ol>
+
+
+
+<h3><font face="宋体" size="5"><a name="Other related applications"></a>Other Related Applications</font></h3>
+
+<ol>
+<li>
+<font face="宋体">R. Diamant, H. P. Tan, L. Lampe,
+<a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6365640">LOS 
+and NLOS Classification for Underwater Acoustic Localization</a>, </font><i>IEEE Trans. 
+</i><font face="宋体"><i>MOBILE COMPUTING</i>, vol. 13, no. 2,</font> pp. 311-323,<font face="宋体"> 
+Feb. 2014.&nbsp;&nbsp;&nbsp;&nbsp; </font>&nbsp;</li>
+<li>
+<font face="宋体">D. M. Surveyor, M. L. S. Giovanni-Surveyor, M. Spadaro,
+<a href="http://hydro-international.com/download/whitepaper_uploadfile_9.pdf">
+UNDERWATER ACOUSTIC POSITIONING SYSTEM</a>, <i>Academy of Positioning Marine and 
+Bathymetry (A.PO.MA.B). SCIENTIFIC MANIFEST-2</i>,2013.</font></li>
+<li>
+<font face="宋体">Y. Wang, G. Leus, et al,
+<a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4960330&tag=1">
+Cramer-Rao bound for range estimation</a>, </font>in Proc. <i>IEEE ICAS</i><font face="宋体"><i>SP</i>, Taipei, China, pp. 
+3301-3304, Apr. 2009. </font></li>
+<li>
+<font face="宋体">L. Collin, S. Azou, K. Yao, et al,
+<a href="http://www.univ-brest.fr/lest/tst/publications/pdf/0007EcuaPosi.pdf">On 
+spatial uncertainty in a surface long baseline positioning system</a>, </font>in 
+<i>Proc.</i><font face="宋体"><i> the Fifth European Conference on Underwater 
+Acoustics</i>, 
+Lyon, France, pp. 607-612, 2000. </font>
+</li>
+</ol>
+
+
+
+<h3><font face="宋体" size="5"><a name="中文文献："></a>中文文献：</font></h3>
+<h3><font face="宋体"><a name="综述文章及相关著作："></a>综述文章及相关著作：</font></h3>
+
+<ol>
+<li>
+<font face="宋体">郭忠文, 罗汉江, 洪锋, 等.
+<a href="http://osn.ouc.edu.cn/~hong/publications/水下无线传感器网络的研究进展.pdf">
+水下无线传感器网络的研究进展[J]</a>.计算机研究与发展, 2010, 47(3): 377-389.</font></li>
+<li>
+<font face="宋体">吕超, 王硕, 谭民.
+<a href="http://www.kzyjc.net:8080/EN/article/downloadArticleFile.do?attachType=PDF&id=9499">
+水下移动无线传感器网络研究综述[J]</a>.控制与决策, 2009, 24(6): 801-812.</font></li>
+<li>
+<font face="宋体">王福豹, 史龙, 任丰原.
+<a href="http://www.jos.org.cn/ch/reader/create_pdf.aspx?file_no=20050525&flag=1&journal_..">
+无线传感器网络中的自身定位系统和算法[J]</a>.软件学报, 2005, 16(5).</font></li>
+<li>
+<font face="宋体">孙利民.
+<a href="http://www.ccf.org.cn/web/resource/newspic/2005/5/10/chuanganqiwangluo.pdf">
+无线传感器网络[M]</a>. 北京：清华大学出版社, 2005.</font></li>
+</ol>
+
+
+<p>　</p>
+<p><font face="宋体" size="4"><b>Last updated:</b> May. 5, 2014</font></p>
+
+</body>
+
+</html>

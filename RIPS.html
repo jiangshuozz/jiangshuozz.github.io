@@ -1,0 +1,148 @@
+<html>
+
+<head>
+<title> Radio Interferometric Geolocation</title>      
+
+</head>
+
+
+
+<h2> <font face="宋体">Radio Interferometric Geolocation 
+</font> </h2>
+
+
+<p><font face="宋体">Localization-awareness is crucial for wireless sensor networks (WSNs), since the data collected by sensors should be stamped with their corresponding locations. Numerous applications of WSNs require accurate location information, such as target tracking, environment monitoring, search and rescue etc. The low-power and low-cost constraints of sensor nodes impose great challenges on the development of low-complexity localization strategies. Meanwhile, the highaccuracy requirement further increases the localization difficulties. Here we present a novel radio interference based sensor localization method for wireless sensor networks.</font></p>
+<p><font face="宋体">On this page, we provide a list of papers in the related 
+areas of radio interferometric localization. 
+The intention is to list some key papers in this area for academic exchanges and also serve for those who are going to study this field.</font></p>
+
+<p><font face="宋体">This page is maintained by 
+Jie Huang (Master student) and
+<a href="http://iwin.sjtu.edu.cn/yiyinwang/index.html">Yiyin Wang</a> (Assistant Professor) from Department of Automation, Shanghai Jiao Tong University, Shanghai, P. R. China.
+</font> </p>
+
+
+
+
+<h3><font face="宋体">Localization</font></h3>
+<ol>
+<h4><font face="宋体">Algorithms</font></h4>
+<ol>
+<li>
+M. Maroti, B. Kusy, G. Balogh, P. Volgyesi, A. Nadas, K. Molnar,
+S. Dora, and A. Ledeczi, "<a href="http://dl.acm.org/citation.cfm?id=1098920">Radio interferometric geolocation</a>," in <em>Proc. ACM
+SenSys</em>, San Diego, California, USA, Nov. 2005, pp. 1–12.</li>
+<li>
+<font face="宋体">Y. Wang, M. Shinotsuka,X. Ma,and M.Tac,"<a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6554918"> Design an asynchronous radio interferometric positioning system using dual-tone signaling</a>," in <em>Proc. IEEE WCNC</em>, Shanghai, China, Apr. 2013, pp.2294-2298.</font></li>
+<li>
+S. H.C, "<a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=1542558&tag=1">A comparative study of two discrete-time phase delay estimators</a>," <em>IEEE Transactions on Instrumentation and Measurement</em>, vol. 54, no. 6, pp.2501-2504, Dec. 2005.</li>
+    <li>
+Y. Huang, A. Hu, S. Xie, and D. Zhu, "<a href="http://www.scientific.net/AMM.411-414.1470">A Novel Radio Interferometric Time Delay Tracking Scheme</a>," <em>Applied Mechanics and Materials</em>, vol.411, Sep. 2013, pp.1470-1474.</li>
+    <li>
+I. Amundson, J. Sallai, X. Koutsoukos, and A. Ledeczi, "<a href="http://link.springer.com/chapter/10.1007/978-3-642-11917-0_1">Radio interferometric angle of arrival estimation</a>," <em>Wireless Sensor Networks</em>, vol. 5970, pp. 1-16, 2010.</li>
+ 
+</ol>
+<h4><font face="宋体">Implementation</font></h4>
+<ol>
+<li>
+ Z. Yang, Z. Zhou, Y. Liu, "<a href="http://dl.acm.org/citation.cfm?id=2543592">From RSSI to CSI: Indoor localization via channel response</a>," <em>ACM Computing Surveys (CSUR)</em>, vol. 46, no. 2, Nov. 2013.</li>
+ <li>K. Wu, J. Xiao, Y. Yi, D. Chen, X. Luo, and L. Ni, "<a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6244790&tag=1">CSI-Based Indoor Localization</a>," <em>IEEE Transactions on Parallel and Distributed Systems</em>, vol. 24, no.7, pp.1300-1309, Jul. 2013.
+</li>
+ <li>
+B. Dil, and P. Havinga, "<a href="http://dl.acm.org/citation.cfm?id=2070954">Stochastic radio interferometric positioning in the 2.4 GHz range</a>," <em>ACM Conference on Embedded Networked Sensor Systems</em>, New York, USA, Nov. 2011, pp. 108-120.</li>
+</ol>
+</ol>
+
+
+<h3><font face="宋体">Tracking</font></h3>
+<ol>
+<li>
+<font face="宋体">B. Kusy, G. Balogh, J. Sallai, A. Ledeczi, and M. Maroti, "<a href="http://link.springer.com/chapter/10.1007/978-3-540-69830-2_4">inTrack: High precision tracking of mobile sensor nodes</a>," <em>Wireless Sensor Networks</em>, pp.51-66, 2007.</font></li>
+<li>
+<font face="宋体">B. Kusy, V. Protopopescu, M. Parang, J. Sallai, and J. Tolliver, "<a href="http://dl.acm.org/citation.cfm?id=1247678">Radio interferometric tracking of mobile wireless nodes</a>," in <em>Proc. ACM MobiSys</em>, New York, USA, Jun. 2007. pp.139-151.</font></li>
+ </ol>
+  
+  <h3><font face="宋体">Hardware implementation</font></h3>
+  <ol>
+  <h4><font face="宋体">Synchronization</font></h4>
+  <ol>
+  <li>External clock:<a href="http://www.trimble.com/timing/thunderbolt-e.aspx">Thunderbolt@ E GPS Disciplined Clock</a>
+  </li>
+  <li>External clock:<a href="https://www.ettus.com/product/details/OctoClock-G">OctoClock-G</a>
+  </li>
+  <li><a href="http://www.ni.com/tutorial/14705/en/">Global Synchronization and Clock Disciplining with NI USRP-293x Software Defined Radio</a>
+  </li>
+  </ol>
+  <h4><font face="宋体">Channel estimation</font></h4>
+  <ol>
+   <li>CSI overview:<a href="http://dhalperi.github.io/linux-80211n-csitool/">Linux 802.11n CSI Tool</a>
+  </li>
+  <li>CSI chip:<a href="http://www.intel.cn/content/www/cn/zh/wireless-products/ultimate-n-wifi-link-5300-brief.html?wapkw=ultimate+n+wifi+link+5300">Intel Ultimate N WiFi Link 5300</a>
+  </ol>
+<h4><font face="宋体">USRP</font></h4> 
+<ol> 
+  <li>NI USRP:<a href="http://www.ni.com/white-paper/14311/en/">Building an Affordable 8x8 MIMO Testbed with NI USRP</a>
+  </li>
+  </ol>
+  </ol>
+  
+  
+  <h3><font face="宋体">Software implementation</font></h3>
+  <ol>
+  <li><a href="https://decibel.ni.com/content/docs/DOC-25716">Angle of Arrival Detection with NI USRP</a>
+  </li>
+  </ol>
+  <p>　</p>
+  
+  <p>　</p>
+  
+  <div align="center"><font face="宋体"><a href="http://www.3v.cm/gbook/index.asp?username=uasnsjtu">Click to leave us a message</a></font></div> 
+  <p>　</p>
+  
+  <div align="center"><font face="宋体">Click-Throughs：<script language="JavaScript" src="http://www.3v.cm/count.asp?id=uasnsjtu"></script></font></div> 
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  <p>　</p>
+  
+</html>
